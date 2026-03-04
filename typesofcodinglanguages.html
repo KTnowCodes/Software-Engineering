@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        #O {
+            display: none;
+        }
+        a {
+            color: #ffffff
+        }
+        a:link{
+            text-decoration: none;
+        }
+        body {
+            background-color: #000000
+        }
+        p {
+            color: #ffffff
+        }
+
+        .ring-container {
+            position: relative; /* Acts as the positioning context for child buttons */
+            width: 200px;
+            height: 200px;
+            margin: 50px auto; /* Centers the container on the page */
+        }
+
+        .ring-button {
+            width: 60px; /* Equal width and height for a perfect circle */
+            height: 60px;
+            background-color: transparent;
+            border: 5px solid #3498db; /* Creates the "ring" effect with a colored border */
+            border-radius: 50%; /* Makes the element a circle */
+            color: #3498db;
+            font-size: flex;
+            cursor: pointer;
+            position: absolute; /* Positions buttons relative to the container */
+            display: flex; /* Helps in centering content */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0; /* Remove default padding */
+        }
+
+        .ring-button:nth-child(1) {
+            top: 0;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .ring-button:nth-child(2) {
+            top: 50%;
+            right: 0;
+            transform: translate(50%, -50%);
+        }
+
+        .ring-button:nth-child(3) {
+            bottom: 0;
+            left: 50%;
+            transform: translate(-50%, 50%);
+        }
+
+        .ring-button:nth-child(4) {
+            top: 50%;
+            left: 0;
+            transform: translate(-50%, -50%);
+        }
+        .ring-button:nth-child(5) {
+            top: 85%;
+            right: 15%;
+            transform: translate(50%, -50%);
+        }
+
+        .ring-button:nth-child(6) {
+            bottom: 85%;
+            left: 15%;
+            transform: translate(-50%, 50%);
+        }
+
+        .ring-button:nth-child(7) {
+            top: 85%;
+            left: 15%;
+            transform: translate(-50%, -50%);
+        }
+
+
+    </style>
+    <script>
+    // JavaScript function to handle the toggling
+    function hide1() {
+        var x = document.getElementById("O");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide2() {
+        var x = document.getElementById("2");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    </script>
+    <head>
+        <title>Credits!</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles.css">
+
+    <head>
+    
+
+       <header>
+        <button style="border: 2px solid #ff0000; color: #ff0000;" class="navagation-buttons" onclick="window.location.href = 'index.html'">What's it about?</button>
+        <button style="border: 2px solid #ff8800; color: #ff8800;" class="navagation-buttons" onclick="window.location.href = 'jobsyoucanhave.html'">Jobs you can have!</button>
+        <button style="border: 2px solid #ffff00; color: #ffff00;" class="navagation-buttons" onclick="window.location.href = 'typesofcodinglanguages.html'">Types of coding languages.</button>
+        <button style="border: 2px solid #00ff00; color: #00ff00;" class="navagation-buttons" onclick="window.location.href = 'reasources.html'">Resources</button>
+        <button style="border: 2px solid #007bffff; color: #007bffff" class="navagation-buttons" onclick="window.location.href = 'bettertutorials.html'">Simple Tutorials & Code Editor</button>
+        <button style="border: 2px solid #ff00ff; color: #ff00ff" class="navagation-buttons" onclick="window.location.href = 'credits.html'">Credits!</button>
+        <p>
+               
+            <br>
+        </p>
+    </header>
+    <body style="background-color: #000000">
+        <div class="ring-container">
+            <button onclick="hide1()" class="ring-button">OPP</button>
+            <button class="ring-button">Procedural</button>
+            <button class="ring-button">Functional</button>
+            <button class="ring-button">Scripting</button>
+            <button class="ring-button">Markup</button>
+            <button class="ring-button">Logic</button>
+            <button class="ring-button">Database</button>
+        </div>
+        <div id="O">
+            <p>
+                Object-Oriented (OOP) | Organizes code around objects that contain both data and methods, promoting code reusability and modularity. | Java, C++, Python, C# | Enterprise applications, Android development, game development, high-performance software.
+            </p>
+        </div>
+            <br>
+            <br>
+            Procedural | Follows a sequence of step-by-step commands or procedures to change a program's state.	| C, Pascal, BASIC, Fortran	| System programming, embedded systems, scientific and engineering applications.
+            <br>
+            <br>
+            Functional | Treats computation as the evaluation of mathematical functions, avoiding mutable data and changing state. | Haskell, Lisp, Scala, F# | Data science, AI, and systems requiring complex data transformations.
+            <br>
+            <br>
+            Scripting | Interpreted languages often used for automating tasks, managing dynamic web content, and developing lightweight applications. | JavaScript, Python, Ruby, PHP | Web development (front-end and back-end), automation, and data analysis.
+            <br>
+            <br>
+            Markup / Web Display	Used to annotate text with metadata for formatting and presenting content, primarily on the web.	HTML, XML, CSS	Creating and designing web pages and web documents.
+            <br>
+            <br>
+            Logic	Expresses facts and rules based on mathematical logic to solve problems.	Prolog, Datalog	Artificial intelligence and expert systems.
+            <br>
+            <br>
+            Database	Specifically designed for managing and manipulating data in relational databases.	SQL	Database management, creating reports, and data retrieval.
+
+        </p>
+    </body>
+</html>
