@@ -313,8 +313,15 @@
     </div>
 
     
-    <div class="text-content">
-        <?php include("questions.txt"); ?>
-    </div>
+    <div id="content">Loading text...</div>
+        <script>
+          fetch('questions.txt')
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('content').innerText = data;
+            })
+            .catch(error => console.error('Error loading file:', error));
+        </script>
+
     </body>
 </html>
