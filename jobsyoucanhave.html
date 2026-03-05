@@ -1,6 +1,42 @@
 <!DOCTYPE html>
 <html>
     <style>
+        #O {
+            display: none;
+        }
+        #L {
+            display: none;
+        }
+        #S {
+            display: none;
+        }
+        #D {
+            display: none;
+        }
+        #F {
+            display: none;
+        }
+        #M {
+            display: none;
+        }
+        #P {
+            display: none;
+        }
+        #Q {
+            display: none;
+        }
+        #W {
+            display: none;
+        }
+        #E {
+            display: none;
+        }
+        #R {
+            display: none;
+        }
+        #T {
+            display: none;
+        }
         a {
             color: #ffffff
         }
@@ -10,13 +46,214 @@
         body {
             background-color: #000000
         }
+        p {
+            color: #ffffff
+        }
+
+        textarea { width: 100%; height: 150px; padding: 10px; border: 2px solid #ddd; border-radius: 8px; font-size: 16px; }
+        .display { margin-top: 20px; padding: 15px; background: #f4f4f4; border-radius: 8px; border-left: 5px solid #28a745; white-space: pre-wrap; }
+    
+
+
     </style>
+    <script>
+    // JavaScript function to handle the toggling
+    function hideall() {
+        var x = document.getElementById("O");
+        var y = document.getElementById("L");
+        var z = document.getElementById("S");
+        var a = document.getElementById("D");
+        var b = document.getElementById("F");
+        var c = document.getElementById("M");
+        var d = document.getElementById("P");
+        var q = document.getElementById("Q");
+        var w = document.getElementById("W");
+        var e = document.getElementById("E");
+        var r = document.getElementById("R");
+        var t = document.getElementById("T");
+        x.style.display = "none";
+        y.style.display = "none";
+        z.style.display = "none";
+        a.style.display = "none";
+        b.style.display = "none";
+        c.style.display = "none";
+        d.style.display = "none";
+        q.style.display = "none";
+        w.style.display = "none";
+        e.style.display = "none";
+        r.style.display = "none";
+        t.style.display = "none";
+
+
+
+    }
+    function hide1() {
+        hideall();
+        var x = document.getElementById("O");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide2() {
+        hideall();
+        var x = document.getElementById("L");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide3() {
+        hideall();
+        var x = document.getElementById("S");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide4() {
+        hideall();
+        var x = document.getElementById("D");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide5() {
+        hideall();
+        var x = document.getElementById("F");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide6() {
+        hideall();
+        var x = document.getElementById("M");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide7() {
+        hideall();
+        var x = document.getElementById("P");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+        function hide8() {
+        hideall();
+        var x = document.getElementById("Q");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide9() {
+        hideall();
+        var x = document.getElementById("W");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide10() {
+        hideall();
+        var x = document.getElementById("E");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide11() {
+        hideall();
+        var x = document.getElementById("R");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+    function hide12() {
+        hideall();
+        var x = document.getElementById("T");
+            if (x.style.display === "none") {
+                x.style.display = "block"; // Show the element
+            }   else {
+                x.style.display = "none"; // Hide the element
+            }
+        }
+
+
+
+        // const BIN_ID = "69a8a8f9ae596e708f5fbd0b"; // Replace with your Bin ID
+        // const MASTER_KEY = "$2a$10$wiZyYhWYB4uTlyWnSke0i.P2uxJz5lUIrJg8joXzkgD7WXTXGdp9O"; // Replace with your Master Key
+        // const URL = `https://api.jsonbin.io{BIN_ID}`;
+
+        // const box = document.getElementById('myTextBox');
+        // const display = document.getElementById('sharedDisplay');
+        // const status = document.getElementById('status');
+        // const btn = document.getElementById('btn');
+
+        // // 1. LOAD: Get data from JSONBin when page opens
+        // async function loadData() {
+        //     try {
+        //         const res = await fetch(URL + "/latest", {
+        //             headers: { "X-Master-Key": MASTER_KEY }
+        //         });
+        //         const result = await res.json();
+        //         const text = result.record.text;
+        //         display.innerText = text || "No messages yet.";
+        //         box.value = text;
+        //         status.innerText = "Showing latest global data.";
+        //     } catch (err) {
+        //         status.innerText = "Error loading data.";
+        //     }
+        // }
+
+        // // 2. SAVE: Update data for everyone
+        // async function saveData() {
+        //     btn.disabled = true;
+        //     status.innerText = "Saving to global server...";
+            
+        //     try {
+        //         await fetch(URL, {
+        //             method: 'PUT',
+        //             headers: {
+        //                 "Content-Type": "application/json",
+        //                 "X-Master-Key": MASTER_KEY
+        //             },
+        //             body: JSON.stringify({ text: box.value })
+        //         });
+        //         status.innerText = "Saved successfully!";
+        //         loadData(); // Refresh the board
+        //     } catch (err) {
+        //         status.innerText = "Save failed.";
+        //     } finally {
+        //         btn.disabled = false;
+        //     }
+        // }
+
+        // window.onload = loadData;
+    </script>
     <head>
-        <title>Credits!</title>
+        <title>Types of Coding Languages!</title>
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
-    <head>
+    </head>
     
 
        <header>
@@ -31,7 +268,220 @@
             <br>
         </p>
     </header>
-    <main style="background-color: #000000">
+    <body style="background-color: #000000">
+        <h1 style="color: #ffffff;">Types of Coding languages</h1>
+        <h3>Click on buttons to explore!</h3>
+        <div class="ring-container">
+            <button onclick="hide1()">Video Game Designer</button>
+            <button onclick="hide7()">Quality Assurance Engineer</button>
+            <button onclick="hide5()">CRM Project Manager</button>
+            <button onclick="hide3()">Software Integration Engineer</button>
+            <button onclick="hide6()">Security Engineer</button>
+            <button onclick="hide2()">Front-End Engineer</button>
+            <button onclick="hide8()">Full-Stack Engineer</button>
+            <button onclick="hide9()" >3D Graphics Developer</button>
+            <button onclick="hide10()">Data Scientist</button>
+            <button onclick="hide11()">Mobile Developer</button>
+            <button onclick="hide12()">DevOps Engineer</button>
+            <button onclick="hide4()">Back-End Engineer</button>
+        </div>
+        <div id="O">
+            <p >
+                <strong style="font-size: 40px">Video Game Designer</strong>
+                <br>
+                <br>
+                A video game designer, also called a game developer, has specialized knowledge in designing and implementing gaming systems that are both engaging and interactive. They use creative skills like storytelling and world-building to program complete environments in which a game can take place. From setting to props to characters, game developers code all the factors that create the gameplay experience for a user. 
+                <br>
+                <br>
+                Salary: $95,363
+                <br>
+                <br>
+                Skills: DirectX, OpenGL, Unity 3D, WebGL, C, C++, Java, Swift, JavaScript, HTML5
+            </p>
+        </div>
+        <div id="P">
+            <p>
+                <strong style="font-size: 40px">Quality Assurance Engineer</strong>	
+                <br>
+                <br>
+                A quality assurance engineer, also referred to as a "QA engineer," tests, reviews, assesses and writes software to validate the quality of an application. QA engineers create automated tests, tools and methods to make sure systems are running as expected, catching errors and working to account for their solutions.	
+                <br>
+                <br>
+                Skills: Python, Ruby, Selenium WebDriver
+                <br>
+                <br>
+                Salary: $60,088 per year
+                
+            </p>
+        </div>
+        <div id="F">
+            <p>
+                <strong style="font-size: 40px">CRM Project Manager</strong>  
+                <br>
+                <br>
+                A customer relationship management (CRM) project manager or developer works with systems that collect user and consumer data, creating programs that gather useful metrics for adjusting the needs of a given program. They may be tasked with improving customer satisfaction or sales by optimizing the tools used by customer support and sales representatives.  
+                <br>
+                <br>
+                Skills: SAP, Salesforce, SharePoint, Enterprise resource planning
+                <br>
+                <br>
+                Salary: $93,934 per year
+            
+            </p>
+        </div>
+        <div id="S">
+            <p>
+                <strong style="font-size: 40px">Software Integration Engineer</strong>  
+                <br>
+                <br>
+                In the modern era of smart devices and the internet of things, software integration engineers (also referred to as embedded systems developers) use coding languages to program hardware like consumer devices, home security alert systems, electronics, interfaces, real-time systems and serial data transmissions.
+                <br>
+                <br>
+                Skills: C, C++, Assembly, Java, proprietary technologies/frameworks/toolkits
+                <br>
+                <br>
+                salary: $127,327 per year
+            </p>
+        </div>
+        <div id="M">
+            <p>
+                <strong style="font-size: 40px">Security Engineer</strong>  
+                <br>
+                <br>
+                Security engineers, often referred to as "white hat" or "ethical" hackers, work to create systems, methods and procedures that test the security of a given software. The main goal of these software engineers is to exploit security flaws and discover vulnerabilities so they can fix them before the systems reach the end-user.
+                <br>
+                <br>
+                Skills: Python, Ruby, C, C++, reverse engineering
+                <br>
+                <br>
+                salary: $82,478 per year
+                <br>
+            </p>
+        </div>
+        <div id="L">
+            <p>
+                <strong style="font-size: 40px">Front-End Engineer</strong>	
+                <br>
+                <br>
+                A front-end engineer, sometimes referred to as a web developer, specializes in the development of user interface (UI) design for the user-facing side of an application or website. This type of software engineer role requires knowledge of visual design elements, including layout and aesthetics, and a thorough understanding of how people interact with and use computer programs.
+                Front-end engineers also need to know code that runs on different operating systems, browsers and user devices to ensure cross-browser compatibility. They also focus heavily on optimizing visual presentation using principles of user experience (UX) design.
+                <br>
+                <br>
+                Skills: UX and UI frameworks, CSS, JavaScript, HTML	
+                <br>
+                <br>
+                salary: $113,185 per year
+            </p>
+        </div>
+        <div id="Q">
+            <p>
+                <strong style="font-size: 40px">Full-Stack Engineer</strong>
+                <br>
+                <br>
+                A software engineer who is fluent in front-end and back-end skills and responsibilities is referred to as a full-stack engineer. These individuals possess all the skills necessary to create a fully functional web app, from the front-facing user experience to the complex systems behind it.
+                <br>
+                <br>
+                Skills: UX and UI frameworks, CSS, JavaScript, HTML, Java, C, C++, Ruby, Perl, Python, Scala, Go, Kubernetes, Docker, Apache Mesos, Jenkins, HashiCorp stack (Terraform, Vault, Consul, Nomad)	
+                <br>
+                <br>
+                salary: $125,076 per year
+            </p>
+        </div>
+        <div id="W">
+            <p>
+                <strong style="font-size: 40px">3D Graphics Developer</strong>  
+                <br>
+                <br>
+                A 3D graphics developer uses specialized knowledge to create software for rendering, lighting, shadowing, shading and management of scenes. They work closely with game developers to code graphic assets for both the gaming and video production industry. Their skills are also useful in front-end development, creating visually engaging and intuitive user interfaces.
+                <br>
+                <br>
+                Skills: DirectX, OpenGL, Unity 3D, WebGL, C, C++, Assembly
+                <br>
+                <br>
+                salary: $131,271 per year
+            
+            </p>
+        </div>
+        <div id="E">
+            <p>
+                <strong style="font-size: 40px">Data Scientist</strong>  
+                <br>
+                <br>
+                A data scientist, or data engineer, develops software programs that analyze information. This often puts them in charge of statistical analysis, machine learning, data visualization and predictive modeling, providing an organization with metrics that can help determine how a product will grow to fit the needs of the business.
+                <br>
+                <br>
+                Skills: SQL, R, Python
+                <br>
+                <br>
+                salary: $119,380 per year
+            </p>
+        </div>
+        <div id="R">
+            <p>
+                <strong style="font-size: 40px">Mobile Developer</strong>  
+                <br>
+                <br>
+                Mobile developers write code for applications specifically designed to run on mobile devices, such as smartphones and tablets.
+                <br>
+                <br>
+                Skills: iOS and Android operating systems, Java, Swift, Objective-C 
+                <br>
+                <br>
+                salary: $127,701 per year
+                <br>
+            </p>
+        </div>
+        <div id="T">
+            <p>
+                <strong style="font-size: 40px">DevOps Engineer</strong>	
+                <br>
+                <br>
+                DevOps (development and operations) engineers apply processes and methodologies to streamline product development, improvement and maintenance as well as facilitate communication between development and operations teams.
+Their work requires familiarity with the processes used by back-end developers to build, deploy and integrate across technologies, like cloud computing services. These software engineers must be familiar with cloud storage applications such as OneDrive, GitHub and Amazon Web Services (AWS).
+                <br>
+                <br>
+                Skills: Kubernetes, Docker, Apache Mesos, Jenkins, HashiCorp stack (Terraform, Vault, Consul, Nomad)
+                <br>
+                <br>
+                salary: $122,771 per year
+            
+            </p>
+        </div>
+        <div id="D">
+            <p>
+                <strong style="font-size: 40px">Back-End Engineer</strong>
+                <br>
+                <br>
+                A back-end engineer, or back-end developer, works within complex systems to create smooth functions behind the user interface, focusing on the core logic, design, implementation, scalability and performance of a system. They mainly create and manage databases, integrating data systems, logging systems and caching systems using Application Programming Interfaces (APIs).
+                <br>
+                <br>
+                Skills: Java, C, C++, Ruby, Perl, Python, Scala, Go
+                <br>
+                <br>
+                salary: $155,681 per year
+            </p>
+        </div>
 
-    </main>
+        </p>
+
+<!--         
+        <textarea id="myTextBox" placeholder="Type a message for the world..."></textarea>
+    <button id="btn" onclick="saveData()">Save for All Users</button>
+
+    <h3>Current Global Message:</h3>
+    <div id="status">Loading...</div>
+    <div id="sharedDisplay" class="display"></div>-->
+
+    <form method="POST" action="update.php">
+        <textarea style="width: 75%; height: 10px; left-align: center;" name="question" rows="5" cols="30">Ask your questions!</textarea>
+        <button style="width: 15%; height: 30px; margin: 0 auto;" onclick="alert('Sorry, there are bugs. Working on it...')">Post</button>
+    </form>
+
+    <div id="content-area">
+        <?php
+        $file_content = file_get_contents('questions.txt');
+        echo $file_content;
+        ?>
+    </div>
+    </body>
 </html>
