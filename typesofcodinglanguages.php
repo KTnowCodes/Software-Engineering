@@ -1,6 +1,6 @@
 <?php
-if (isset($_POST['new_content'])) {
-    $new_content = $_POST['new_content'];
+if (isset($_POST['question'])) {
+    $new_content = $_POST['question'];
     
     file_put_contents('questions.txt', $new_content);
     
