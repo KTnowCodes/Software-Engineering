@@ -247,7 +247,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
 
-    <head>
+    </head>
     
 
        <header>
@@ -386,69 +386,18 @@
 
     <h3>Current Global Message:</h3>
     <div id="status">Loading...</div>
-    <div id="sharedDisplay" class="display"></div>
-    </body> -->
-    <textarea id="myContent" rows="10" cols="50">Ask your question...</textarea><br>
-    <button onclick="alert('Working on it but not avalible right now')">Post</button>
+    <div id="sharedDisplay" class="display"></div>-->
 
-    <!-- <script>
-        saveToGitHub()
-        async function saveToGitHub() {
-            const token = "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";
-            const repo = "KTnowCodes/Software-Engineering";
-            const path = "questions.txt"; // The file in your repo
-            const message = "Update from web interface";
-            const content = document.getElementById('myContent').value;
+    <form method="POST" action="update.php">
+        <textarea style="width: 75%; height: 10px; left-align: center;" name="question" rows="5" cols="30"></textarea>
+        <button style="width: 15%; height: 30px; margin: 0 auto;" onclick="alert('This can be viewed by everyone.')" type="submit">Post</button>
+    </form>
 
-            // 1. Get the "SHA" of the existing file (GitHub requires this to update)
-            const getUrl = `https://api.github.com{repo}/contents/${path}`;
-            const res = await fetch(getUrl, {
-                headers: { "Authorization": `token ${token}` }
-            });
-            const data = await res.json();
-            const sha = data.sha;
-
-            // 2. Push the new content
-            const putRes = await fetch(getUrl, {
-                method: "PUT",
-                headers: {
-                    "Authorization": `token ${token}`,
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify({
-                    message: message,
-                    content: btoa(content), // GitHub requires Base64 encoding
-                    sha: sha
-                })
-            });
-
-            if (putRes.ok) alert("Saved to GitHub!");
-            else alert("Error saving file.");
-        }
-    </script>
-    
-    
-    <div id="content-box" style="border:1px solid #ccc; padding:10px;">
-      Loading content...
+    <div id="content-area">
+        <?php
+        $file_content = file_get_contents('questions.txt');
+        echo $file_content;
+        ?>
     </div>
-    
-    <script>
-
-      const rawUrl = 'https://raw.githubusercontent.com';
-    
-      fetch(rawUrl)
-        .then(response => {
-          if (!response.ok) throw new Error('Network response was not ok');
-          return response.text();
-        })
-        .then(data => {
-          document.getElementById('content-box').innerText = data;
-        })
-        .catch(error => {
-          document.getElementById('content-box').innerText = 'Failed to load content.';
-          console.error('Error:', error);
-        });
-    </script> -->
-
     </body>
 </html>
